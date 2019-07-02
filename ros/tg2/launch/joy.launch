@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="joy_config" default="custom" />
+	<arg name="joy_dev" default="/dev/input/js0" />
+	<arg name="config_filepath" default="$(find teleop_twist_joy)/config/$(arg joy_config).config.yaml" />
+  
+	<node pkg="joy" type="joy_node" name="joy_node">
+	    <param name="dev" value="$(arg joy_dev)" />
+	    <param name="deadzone" value="0.01" />
+	    <param name="autorepeat_rate" value="20" />
+	</node>
+
+	<node pkg="teleop_twist_joy" type="teleop_node" name="teleop_node" output="screen">
+	    <param name="scale_linear" value="0.50" />
+	    <param name="scale_angular" value="0.50" />
+	    <param name="enable_button" value="4" />
+	</node>
+
+	<!--<node pkg="p2os_teleop" type="p2os_teleop" name="p2os_teleop" >
+		<remap from="cmd_vel" to="key_vel" />
+	</node>-->
+
+	<!-- <node name="bag" type="record" pkg="rosbag" args="/pose /camera/image_raw /tf -o /home/pioneer/cacic_ws/vidal" output="screen" respawn="true" /> -->
+</launch>
