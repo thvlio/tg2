@@ -33,7 +33,7 @@ numpy==1.15.2
 numpy-quaternion==2018.10.1.22.5.32
 pandas==0.23.4
 pbr==5.1.3
-Pillow==5.4.1
+Pillow==8.2.0
 progressbar2==3.38.0
 protobuf==3.7.0
 psutil==5.4.7
