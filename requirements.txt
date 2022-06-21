@@ -29,7 +29,7 @@ mock==2.0.0
 Naked==0.1.31
 networkx==2.2
 numba==0.40.1
-numpy==1.15.2
+numpy==1.22.0
 numpy-quaternion==2018.10.1.22.5.32
 pandas==0.23.4
 pbr==5.1.3
