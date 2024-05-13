@@ -13,7 +13,7 @@ gast==0.2.2
 gnupg==2.3.1
 grpcio==1.19.0
 h5py==2.9.0
-idna==2.7
+idna==3.7
 isort==4.3.4
 Keras==2.1.6
 Keras-Applications==1.0.7
